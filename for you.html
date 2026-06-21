@@ -1,0 +1,51 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Apology Card</title>
+    <link rel="stylesheet" href="for you.css">
+</head>
+<body>
+    <div class="page">
+        <div class="card">
+            <div class="heart-cloud">
+                <span>💖</span>
+                <span>💗</span>
+                <span>💘</span>
+                <span>💞</span>
+                <span>💕</span>
+                <span>💓</span>
+                <span>💗</span>
+                <span>💟</span>
+            </div>
+            <div class="card-top">
+                <span class="heart">💖</span>
+                <h1>to my princess</h1>
+            </div>
+            <p class="intro">I tried to create a message for you, my little girl. I learned most codes today just for you to know how much I'm sorry,it took me all night long, so please babe read it carefully and let me know what you think and feel about it, okay babe?</p>
+            <div id="message">Tap the button to see the full message babe, but before you do, please know that this time i mean every word i said, and infront of everyone here,i love you more than anything .</div>
+            <div class="button-row">
+                <button onclick="nextMessage()">Read my apology now!</button>
+                <button class="secondary" onclick="showPromise()">Show my promise</button>
+            </div>
+            <div id="promise">If you want, click the second button to see the promise I make for you.</div>
+            <div id="response" class="response hidden">
+                <p class="question">can you forgive me?</p>
+                <div class="response-buttons">
+                    <button class="yes" onclick="answerYes()">Yes</button>
+                    <button class="no" id="noButton" onmouseover="dodgeNoButton()" onclick="answerNo()">No</button>
+                </div>
+                <p id="answerText"></p>
+            </div>
+        
+            <p class="footer">from kin.</p>
+        </div>
+    </div>
+
+    <audio id="bg-audio" loop>
+      <source src="adagio.m4a" type="audio/mp4">
+    </audio>
+    <script src="for you.js"></script>
+</body>
+</html>
